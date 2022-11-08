@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Slider / Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+    <!-- carousel တွင် gp သုံးခုရှိသည် 
+    ၁   carousel-indicators အား ul သို့ မဟုတ် ol ဖြင့် နှင့်သက်ရာနှင့်  ေရးနိုင်သည် 
+    ၂   carousel-inner //carousel-inner ထဲတွင် မိမိထည့်ချင်သော information များအား carousel-item အဖြစ်ထည့်သွင်းရမည်
+    ၃   carousel-contorl-button // carousel-control-left & carousel-control-right တို့ဖြစ်သည်
+    -->
+    <div class="container">
+        <div class="carousel"> 
+            <ol class="carousel-indicators"><!-- carousel-indicators အား ul သို့ မဟုတ် ol ဖြင့် နှင့်သက်ရာနှင့်        ေရးနိုင်သည် -->
+                <li class="dot" data-bs-slide-to = "1"></li><!-- js မှ  value လှမ်းခေါ်ပြီး slide ပြောင်းပေးနိုင်ရန်ဖြစ်သည်   -->
+                <li class="dot" data-bs-slide-to = "2"></li>
+                <li class="dot" data-bs-slide-to = "3"></li>
+            </ol>
+            <div class="carousel-inner"> <!-- carousel-inner //carousel-inner ထဲတွင် မိမိထည့်ချင်သော information များအား carousel-item အဖြစ်ထည့်သွင်းရမည်-->
+                <div class="carousel-item">
+                    <img src="./user/user1.jpg" class="user" alt="user1">
+                    <h3 class="jobtitle">Project Manager</h3>
+                    <a href="#" class="contact-btn"><i class="fas fa-sms"></i>Contact Me</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="./user/user2.jpg" class="user" alt="user2">
+                    <h3 class="jobtitle">Senior Developer</h3>
+                    <a href="#" class="contact-btn"><i class="fas fa-envelope"></i>Email Me</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="./user/user3.jpg" class="user" alt="user3">
+                    <h3 class="jobtitle">Junior Web Designer</h3>
+                    <a href="#" class="contact-btn"><i class="fas fa-phone"></i>Phone Me</a>
+                </div>
+            </div>
+            <!-- carousel-contorl-button // carousel-control-left & carousel-control-right တို့ဖြစ်သည် -->
+            <a href="#" id="prev" class="carousel-control-prev"><i class="fas fa-angle-left"></i></a>
+            <a href="#" id="next" class="carousel-control-next"><i class="fas fa-angle-right"></i></a>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
